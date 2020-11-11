@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mario Pest Control</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Mario's Pest Control</h1>
+        </div>
+        <div class="body">
+            <ul class="baddie-list">
+                <li class="goomba">
+                    <img src="https://play.nintendo.com/images/Masthead_Goomba.17345b1513ac044897cfc243542899dce541e8dc.9afde10b.png" alt="Goomba">
+                    <span>Goomba</span>
+                    <span>5 Coins/Each</span>
+                    <input
+                        id="goomba-input"
+                        type="number"
+                        placeholder="# Goombas Caught"
+                    />
+                    <span id="goomba-total"></span>
+                </li>
+                <li class="bob-ombs">
+                    <img src="https://www.nicepng.com/png/full/218-2185184_bob-omb-walk-super-mario-bob-ombs.png">
+                    <span>Bob-ombs</span>
+                    <span>7 Coins/Each</span>
+                    <input
+                        id="bob-ombs-input"
+                        type="number"
+                        placeholder="# Bob-ombs Caught"
+                    />
+                    <span id="bob-ombs-total"></span>
+                </li>
+                <li class="cheep-cheeps">
+                    <img src="https://www.mariowiki.com/images/thumb/6/63/CheepCheepNSMBU.png/300px-CheepCheepNSMBU.png" alt="Cheep-cheeps">
+                    <span>Cheep-cheeps</span>
+                    <span>11 Coins/Each</span>
+                    <input
+                        id="cheep-cheeps-input"
+                        type="number"
+                        placeholder="# Cheep-cheeps Caught"
+                    />
+                    <span id="cheep-cheeps-total"></span> 
+                </li>
+            </ul>
+            <div class="btns">
+                <button class="btn totals-btn" onclick="handleBaddiesBill()">Calculate Total Bill</button>
+                <button class="btn" id="clear-btn">Clear All</button>
+            </div>
+            <br>
+            <hr>
+            <h3>Baddies Bill Total - <span id="bill-total"></span></h3>
+            <hr>
+            <div class="breakdown"><b>Breakdown - </b>
+                <br>
+                <br>
+                <div id="goomba-breakdown"></div>
+                <br>
+                <div id="bobombs-breakdown"></div>
+                <br>
+                <div id="cheepCheep-breakdown"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="email">mario@nintendo.com</div>
+            <div class="website"><a href="https://mario.nintendo.com">Mario's Website</a></div>
+            <div class="address">50 west street, New York,NY 10002 </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
